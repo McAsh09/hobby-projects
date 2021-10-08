@@ -31,7 +31,8 @@
     border-radius: 5px;
     text-decoration: none;
     transition: 0.5s ease-in-out;
-    color: #FFF;    
+    color: #FFF;
+    font-size: 20px;    
     font-weight:bold;
     background-color: #3C73FF;
     border: none;
