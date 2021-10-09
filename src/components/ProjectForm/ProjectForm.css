@@ -17,13 +17,14 @@
     border: none;
     border-radius: 20px;
     box-shadow: 0px 6px 15px 0px #ccc;
-    background-color: white;
+    background-color: #202627ab;
+    color:white;
 }
 
 .form-page__form__title{
     display: flex;
     flex-direction: column;
-    font-size: 26px;
+    font-size: 26px;   
 }
 
 .form-page__form__title input{
@@ -85,7 +86,8 @@
 .form-page__error-text{
     color: #ec3c3c;
     margin: 5px 0;
-    font-size: 13px;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .form-page__form__images{
@@ -101,7 +103,7 @@
     margin-top: 10px;
     width: 320px;
     height: 70px;
-    background-color: #abceffa6;
+    background-color: #162841a6;
     border: 2px dashed #648eec;
     color: #9DA0AB;
     border-radius: 5px;
@@ -111,9 +113,8 @@
 }
 
 .form-page__form__images input[type=button]:hover{
-    cursor: pointer;
-    border-color: blue;
-    background-color: #d1e4ffa6;
+    cursor: pointer;    
+    background-color: #3f4f66a6;
 }
 
 .form-page__form__buttons{
@@ -126,7 +127,7 @@
 
 .form-page__form__back{
     padding: 10px;
-    background-color: #d6d6d666;
+    background-color: #00000066;
     border: none;
     border-radius: 5px;
     color: #9DA0AB;
@@ -146,15 +147,16 @@
     background-color: #348bfc;
     color: white;
     font-family: 'Montserrat';
+    cursor: pointer;
 }
 
 .form-page__form__submit:hover{
     cursor: pointer;
-    background-color: blue;
+    background-color: rgb(180, 180, 216);    
 }
 
 .form-page__form__submit:disabled{
-    background-color: #ccc;
+    background-color: #000000;
     color: #9DA0AB;
 }
 

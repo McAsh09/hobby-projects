@@ -3,6 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import './Home.css';
 import ProjectCard from './ProjectCard/ProjectCard';
+import Tilt from 'react-tilt';
+
 
 const Home = () => {
     const projects = useSelector(state => state.projects); //to get hold of any state that is maintained in the redux store, in this case 'projects'
@@ -32,22 +34,28 @@ const Home = () => {
             }
             <div className="project-header">
                 <div className="project-header__title">
-                    <span>Projects</span>
+                    <span>Hobby Projects</span>
                 </div>
+            </div>
+               
+            <div className="project-cards" style={!projects.length?{alignItems:'center', justifyContent:'center'}:{}}>
+                {ProjectCards}                
+                
+            <Tilt className="Tilt" options={{ max : 25 }} style={{ height: 250, width: 250 }} >
+                    <div className="project__add-card">
+                        <NavLink to='/project-form'>
+                            <button className="project__add-card__button">
+                                <img className="project__add-card__img" src="/add.png" alt="add"/>
+                            </button>
+                        </NavLink>    
+                    </div>    
+            </Tilt>
+            </div>
+
+            <div className="add-projects">
                 <NavLink to='/project-form'>
                     <button className="project-header__button">Add Projects</button>
                 </NavLink>
-            </div>
-
-            <div className="project-cards" style={!projects.length?{alignItems:'center', justifyContent:'center'}:{}}>
-                {ProjectCards}
-                <div className="project__add-card">
-                    <NavLink to='/project-form'>
-                        <button className="project__add-card__button">
-                            <img className="project__add-card__img" src="/add.svg" alt="add"/>
-                        </button>
-                    </NavLink>
-                </div>
             </div>
         </div>
     )

@@ -2,13 +2,13 @@
     height: fit-content;
     display: flex;
     flex-direction: column;
-    border-radius: 0 0 15px 15px;
-    box-shadow: 0px 6px 15px 0px #ccc;
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px 0px #494545;
     width: 300px;
     margin: 10px;
     padding-bottom: 10px;
     transition: 0.5s ease-in-out;
-    background-color: #ffffffab;
+    background-color: #202627ab;
 }
 
 .card:hover{
@@ -66,7 +66,7 @@
     box-shadow: 0 0 5px 5px #3C73FF;
     /* border-radius: 100px; */
     background: none;
-    color: #3C73FF;
+    color: white;
     cursor: pointer;
 }
 

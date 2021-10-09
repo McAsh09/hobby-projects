@@ -11,9 +11,8 @@
 .project-header {
     padding: 10px;
     padding-right: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: flex;    
+    justify-content: center;
     align-items: center;    
     background: linear-gradient(to right, #feac5e, #c779d0, #4bc0c8);  
     
@@ -24,24 +23,27 @@
     font-size: 50px;
     font-family: 'Montserrat', 'system-ui', 'Segoe UI';
     font-weight: 500;   
+    color:#282b2b;
+    font-weight: bold;
 }
 
 .project-header__button {
-    padding: 10px 30px;
+    margin-left: -2px;
+    padding: 10px 85px;
     border-radius: 5px;
     text-decoration: none;
     transition: 0.5s ease-in-out;
     color: #FFF;
     font-size: 20px;    
     font-weight:bold;
-    background-color: #3C73FF;
+    background-color: #202627ab;
     border: none;
     font-family: 'Montserrat', 'system-ui', 'Segoe UI';
 } 
 
  .project-header__button:hover {
-    box-shadow: 0 0 5px 5px #4f7dc2;        
-    color: #fef720;
+    box-shadow: 0 0 5px 5px #333131;        
+    color: #fef720;    
     font-weight: bold;
     cursor: pointer;        
 } 
@@ -59,22 +61,23 @@
 }
 
 .project__add-card{
-    height: 320px;
+    height: 420px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 0 0 15px 15px;
-    box-shadow: 0px 6px 15px 0px #ccc;
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px 0px #494545;
     width: 300px;
     margin: 10px;
     padding-bottom: 10px;
-    background-color: #ffffffab;
+    background-color: #202627ab;
     transition: 0.5s ease-in-out;
+    margin-left: -30px;
 }
 
-.project__add-card:hover{
+/* .project__add-card:hover{
     transform: translateY(-15px);
-}
+} */
 
 .project__add-card__button{
     border: none;
@@ -96,6 +99,15 @@
 .project__add-card__img:hover{
     transform: rotate(90deg);
     cursor: pointer;
+}
+
+
+.add-projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 270px;
+       
 }
 
 
